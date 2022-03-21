@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1> Formulario </h1>
+        <form id="form" action="" method="" novalidate>
+            <input class="form-control mb-2" type="text" name="userName" placeholder="Nombre" autocomplete="on" id="userName" minlength="3" maxlength="20" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+            <input type="email" class="form-control mb-2" name="userMail" placeholder="Mail" id="userMail" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="Ingresa un correo que sea valido" required>
+            <button type="submit" class="btn btn-primary"> Enviar </button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
